@@ -1,0 +1,9 @@
+policies:
+  - name: unattached-ebs-volumes
+    resource: ebs
+    conditions:
+      - region: us-west-2
+    filters:
+      - type: value
+        key: "State"
+        value: "available"

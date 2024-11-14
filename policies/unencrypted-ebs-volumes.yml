@@ -1,0 +1,7 @@
+policies:
+  - name: unencrypted-ebs-volumes
+    resource: ebs
+    conditions:
+      - region: us-west-2
+    filters:
+      - Encrypted: false
