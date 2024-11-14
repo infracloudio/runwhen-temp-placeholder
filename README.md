@@ -24,11 +24,11 @@ pip install c7n
 The policy is validated automatically when you run it, but you can also validate it separately:
 
 ```sh
-custodian validate custodian.yml
+custodian validate ./policies/example.yml
 ```
 
 You can also check which resources are identified by the policy without running any actions on the resources:
 
 ```sh
-custodian run --dryrun -s . custodian.yml
+custodian run --dryrun -s . ./policies/example.yml
 ```
