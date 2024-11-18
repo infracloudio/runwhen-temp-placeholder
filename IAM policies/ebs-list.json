@@ -1,17 +1,21 @@
 {
-    "Version": "2012-10-17",
-    "Statement": [
-        {
-            "Effect": "Allow",
-            "Action": [
-                "ec2:DescribeVolumes",
-                "ec2:DescribeSnapshots",
-                "ec2:DescribeVolumeAttribute",
-                "ec2:DescribeVolumeStatus",
-                "ec2:DescribeTags",
-                "ec2:DescribeInstances"
-            ],
-            "Resource": "*"
-        }
-    ]
+	"Version": "2012-10-17",
+	"Statement": [
+		{
+			"Effect": "Allow",
+			"Action": [
+				"ec2:DescribeTags",
+				"ec2:DescribeImages",
+				"ec2:DescribeVolumes",
+				"ec2:DescribeInstances",
+				"ec2:DescribeSnapshots",
+				"ec2:DescribeVolumeStatus",
+				"ec2:DescribeVolumeAttribute",
+				"autoscaling:DescribeTags",
+				"autoscaling:DescribeAutoScalingGroups", 
+				"autoscaling:DescribeLaunchConfigurations"
+			],
+			"Resource": "*"
+		}
+	]
 }
